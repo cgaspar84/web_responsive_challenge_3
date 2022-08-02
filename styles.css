@@ -188,3 +188,61 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+
+    #main-doc #navbar-container {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        left: 0;
+        top: 0;
+        background-color: black;
+        
+        border-right: none;
+        outline: none;       
+    }
+
+    #main-doc #navbar-container #navbar  {
+        position: absolute;
+        height: 180px;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        padding-top: 0;
+        z-index: 1;
+    }
+    
+    #main-doc #navbar-container #navbar #navbar-header {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        background-image: url('https://www.gamerslance.com/images/posts/c24b9d9728013d142992355c1a9c6933-0.jpg');
+        background-size: cover;
+    }
+
+    #main-doc > #main-section-container {
+        position: absolute;
+        width: 96%;
+        top: 280px;
+        left: 0;
+        
+    }
+
+    #main-doc #main-section-container section figure {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0.8em;
+        font-style: italic;
+    }
+    #main-doc #main-section-container section figure img {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    
+} 
