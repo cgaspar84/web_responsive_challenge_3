@@ -176,3 +176,15 @@ body {
 #main-doc #main-section-container section .encounter-container ul #water {
     background-color: #00A0F5;
 }
+
+#main-doc #main-section-container section figure {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+}
+#main-doc #main-section-container section figure img {
+    max-width: 800px;
+    margin: 0 auto;
+}
