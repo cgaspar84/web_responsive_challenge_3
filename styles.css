@@ -1,0 +1,178 @@
+:root {
+    --sidebar-size: 320px;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 20px;
+}
+
+/* ===================== NAVIGATION BAR STYLE ==============================*/
+
+#main-doc #navbar-container {
+    position: fixed;
+    width: var(--sidebar-size);
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    
+    border-right: 10px solid #E3313D;
+    outline: 5px solid #C42835;
+}
+
+#main-doc #navbar-container #navbar #navbar-header {
+    position: fixed;
+    width: var(--sidebar-size);
+    height: 170px;
+    top: 0;
+    background-image: url('https://www.gamerslance.com/images/posts/c24b9d9728013d142992355c1a9c6933-0.jpg');
+    background-size: cover;
+}
+
+#main-doc #navbar-container #navbar #navbar-header header {
+    background-color: white;
+    opacity: 0.7;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+}
+ 
+#main-doc #navbar-container #navbar  {
+    position: fixed;
+    height: 70%;
+    width: var(--sidebar-size);
+    top: 150px;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+#main-doc #navbar-container #navbar #navbar-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main-doc #navbar-container #navbar #navbar-options ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent: 30px;
+}
+
+#main-doc #navbar-container #navbar #navbar-options li {
+    line-height: 60px;
+    border: 1px solid white;
+}
+
+#main-doc #navbar-container #navbar #navbar-options li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    
+}
+#main-doc #navbar-container #navbar #navbar-options li a:hover {
+    transition: all 0.6s ease-out;  
+    opacity: 0.95;
+    background: white;
+    color: black;
+}
+
+/* ===================================== MAIN CONTENT STYLE ============================== */
+#main-doc > #main-section-container {
+    position: relative;
+    width: calc(100% - var(--sidebar-size));
+    top: 0;
+    left: var(--sidebar-size);
+    padding: 20px;
+    padding-right: 0;
+}
+
+#main-doc #main-section-container section header {
+    font-size: 2em;
+    font-weight: 800;
+    background-color: #E4E1F2;
+    color: #251F21;
+    padding: 15px;
+    padding-left: 25px;
+    margin-left: -25px;
+}
+
+#main-doc #main-section-container section h2 {
+    font-size: 1.1em;
+}
+
+#main-doc #main-section-container section p {
+    font-size: 0.9em;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+#main-doc #main-section-container section .encounter-container {
+    color: #C42835;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#main-doc #main-section-container section .encounter-container p {
+    background-color: #E38C22;
+    color: #C42835;
+    line-height: 40px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: white;
+    margin-bottom: -10px;
+}
+
+
+#main-doc #main-section-container section .encounter-container ul li span {
+    color: black;
+    line-height: 30px;
+    list-style: none;
+    width: 150px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 0.9em;
+}
+
+#main-doc #main-section-container section .encounter-container ul li {
+    background-color: aqua;
+    color: black;
+    line-height: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: -40px;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 0.8em;
+}
+
+#main-doc #main-section-container section .encounter-container ul li:nth-child(odd) {
+    background-color: white;
+}
+#main-doc #main-section-container section .encounter-container ul li:nth-child(even) {
+    background-color: lightgray;
+}
+
+#main-doc #main-section-container section .encounter-container ul #grass {
+    background-color: #7dd977;
+}
+#main-doc #main-section-container section .encounter-container ul #fire {
+    background-color: #F6783A;
+}
+#main-doc #main-section-container section .encounter-container ul #water {
+    background-color: #00A0F5;
+}
